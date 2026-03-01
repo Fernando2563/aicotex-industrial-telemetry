@@ -45,3 +45,55 @@ src/
 - [ ] Time-series database integration (InfluxDB / PostgreSQL)
 - [ ] Edge AI anomaly detection
 - [ ] Edge AI anomaly detection (scikit-learn / TensorFlow Lite)
+ # Aicotex Industrial Telemetry
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Architecture](https://img.shields.io/badge/Architecture-Modular-green)
+![Industry](https://img.shields.io/badge/Domain-Industrial%20IoT-orange)
+![Status](https://img.shields.io/badge/Status-Under%20Development-yellow)
+
+Modular industrial telemetry and intelligent monitoring platform developed in Python.
+
+Designed for industrial environments, OT/IT integration, edge computing, and future cloud connectivity.
+
+---
+
+## Overview
+
+Aicotex is a layered industrial telemetry architecture structured into independent modules:
+
+- **Sensor Layer** – Data acquisition abstraction
+- **Control Layer** – Logic processing and decision engine
+- **Telemetry Layer** – Structured JSON data publishing
+- **Integration Layer (Future)** – MQTT / Cloud / Database connectivity
+- **Intelligence Layer (Future)** – Edge AI anomaly detection
+
+The system simulates a temperature control environment but is architected for real-world industrial automation, data centers, and mission-critical infrastructure.
+
+---
+
+## Architecture Diagram
+
+---
+
+## Project Structure
+
+---
+
+## Example Telemetry Payload
+
+```json
+{
+  "system": "Aicotex Industrial Telemetry",
+  "timestamp": 1700000000,
+  "sensor": {
+    "name": "Temperature",
+    "value": 26.4,
+    "unit": "°C"
+  },
+  "control": {
+    "setpoint": 25.0,
+    "cooling_on": true
+  }
+}
+python src/main.py
