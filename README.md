@@ -1,19 +1,53 @@
 # Aicotex Industrial Telemetry
 
-Industrial telemetry and intelligent monitoring platform developed in Python.
+Modular industrial telemetry and intelligent monitoring platform developed in Python.
+
+Designed for industrial environments, OT/IT integration, and future cloud connectivity.
+
+---
 
 ## Overview
 
-Aicotex is a modular industrial monitoring architecture designed for:
+Aicotex is a modular industrial monitoring architecture structured into independent layers:
 
-- Sensor abstraction
-- Control logic processing
-- Structured telemetry publishing
-- Future cloud and MQTT integration
+- **Sensor Layer** – Data acquisition abstraction
+- **Control Layer** – Logic processing and decision engine
+- **Telemetry Layer** – Structured data publishing
+- **Integration Layer (Future)** – MQTT / Cloud / Database connectivity
 
-The system simulates a temperature control environment but is structured for real-world industrial integration (Modbus, BACnet, OPC-UA).
+The system simulates a temperature control environment but is architected for real-world industrial applications such as HVAC systems, data centers, and critical infrastructure.
 
 ---
 
 ## Architecture
 
+### Components
+
+- `SensorBlock`  
+  Responsible for sensor abstraction and data acquisition.
+
+- `ControlBlock`  
+  Processes sensor input and applies control logic (setpoint-based decision).
+
+- `TelemetryBlock`  
+  Formats and publishes structured telemetry payloads (JSON-ready).
+
+---
+
+## How to Run
+
+```bash
+python src/main.py
+{
+  "system": "Aicotex Industrial Telemetry",
+  "timestamp": 1700000000,
+  "sensor": {
+    "name": "Temperature",
+    "value": 26.4,
+    "unit": "°C"
+  },
+  "control": {
+    "setpoint": 25.0,
+    "cooling_on": true
+  }
+}
