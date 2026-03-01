@@ -117,7 +117,6 @@ The system simulates a temperature control environment but is architected for re
     "cooling_on": true
   }
 }
-python src/main.py
 ## Why This Project Matters
 
 Industrial environments are rapidly converging OT (Operational Technology) and IT (Information Technology).
