@@ -118,3 +118,30 @@ The system simulates a temperature control environment but is architected for re
   }
 }
 python src/main.py
+## Why This Project Matters
+
+Industrial environments are rapidly converging OT (Operational Technology) and IT (Information Technology).
+
+Aicotex is designed to simulate and scale toward real-world industrial telemetry scenarios, including:
+
+- Critical infrastructure monitoring
+- Industrial automation systems
+- Edge computing environments
+- Data center thermal control
+- Autonomous systems (AGV / LGV environments)
+
+The architecture is intentionally modular to support:
+
+- Scalability
+- Cloud-native integration
+- Real-time telemetry streaming
+- Edge AI anomaly detection
+## Industrial Use Cases
+
+Aicotex architecture can be adapted for:
+
+- Smart factories
+- Autonomous logistics systems (LGV / AGV)
+- Data centers (thermal and power monitoring)
+- Industrial IoT deployments
+- Predictive maintenance systems
