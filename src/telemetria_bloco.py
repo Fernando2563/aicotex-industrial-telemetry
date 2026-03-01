@@ -5,7 +5,7 @@ import time
 class TelemetryBlock:
     """
     Telemetry Layer
-    Responsible for formatting and publishing data.
+    Responsible for formatting and publishing structured data.
     """
 
     def __init__(self, system_name: str):
@@ -21,7 +21,7 @@ class TelemetryBlock:
         return json.dumps(payload, indent=2)
 
     def publish(self, payload: str):
-        # For now, just print (future: MQTT / Cloud / Database)
+        # Simulated publish (future: MQTT / Cloud / Database)
         print("[Telemetry Publish]")
         print(payload)
         print("=" * 60)
