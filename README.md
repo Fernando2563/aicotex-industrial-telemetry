@@ -144,3 +144,12 @@ Aicotex architecture can be adapted for:
 - Data centers (thermal and power monitoring)
 - Industrial IoT deployments
 - Predictive maintenance systems
+## Target Technical Stack (Future Vision)
+
+- Python (Core Logic)
+- MQTT (Eclipse Mosquitto)
+- REST API (FastAPI)
+- Time-Series Database (InfluxDB / PostgreSQL)
+- Docker Containerization
+- Edge AI (Scikit-learn / TensorFlow Lite)
+- Cloud Integration (Azure IoT / AWS IoT Core)
