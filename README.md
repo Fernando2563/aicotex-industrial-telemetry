@@ -33,24 +33,10 @@ The system simulates a temperature control environment but is architected for re
   Formats and publishes structured telemetry payloads (JSON-ready).
 
 ---
-
-## Example Telemetry Output
-
-```json
-{
-  "system": "Aicotex Industrial Telemetry",
-  "timestamp": 1700000000,
-  "sensor": {
-    "name": "Temperature",
-    "value": 26.4,
-    "unit": "°C"
-  },
-  "control": {
-    "setpoint": 25.0,
-    "cooling_on": true
-  }
-}
-
----
+src/
+ ├── main.py
+ ├── sensor_block.py
+ ├── control_block.py
+ └── telemetry_block.py
 
 
