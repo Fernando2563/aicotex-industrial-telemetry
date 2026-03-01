@@ -38,5 +38,10 @@ src/
  ├── sensor_block.py
  ├── control_block.py
  └── telemetry_block.py
-
-
+## Roadmap
+- [ ] MQTT integration
+- [ ]  MQTT broker integration (Eclipse Mosquitto)
+- [ ]  Persistent database storage    
+- [ ] Time-series database integration (InfluxDB / PostgreSQL)
+- [ ] Edge AI anomaly detection
+- [ ] Edge AI anomaly detection (scikit-learn / TensorFlow Lite)
