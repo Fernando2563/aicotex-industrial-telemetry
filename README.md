@@ -45,7 +45,7 @@ src/
 - [ ] Time-series database integration (InfluxDB / PostgreSQL)
 - [ ] Edge AI anomaly detection
 - [ ] Edge AI anomaly detection (scikit-learn / TensorFlow Lite)
- # Aicotex Industrial Telemetry
+# Aicotex Industrial Telemetry
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-Modular-green)
@@ -73,7 +73,28 @@ The system simulates a temperature control environment but is architected for re
 ---
 
 ## Architecture Diagram
-
+           +-----------------------+
+           |      Cloud Layer      |
+           |  (Azure / AWS / DB)   |
+           +-----------+-----------+
+                       |
+                 MQTT / REST
+                       |
+           +-----------v-----------+
+           |    Telemetry Layer    |
+           |   (TelemetryBlock)    |
+           +-----------+-----------+
+                       |
+           +-----------v-----------+
+           |     Control Layer     |
+           |    (ControlBlock)     |
+           +-----------+-----------+
+                       |
+           +-----------v-----------+
+           |     Sensor Layer      |
+           |    (SensorBlock)      |
+           +-----------------------+
+           
 ---
 
 ## Project Structure
